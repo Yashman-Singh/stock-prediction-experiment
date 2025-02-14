@@ -1,14 +1,13 @@
 # Stock Market Prediction Experiment
 
-An experimental project exploring deep learning approaches for stock market prediction. This project implements various neural network architectures (LSTM, GRU, and Transformer) and combines technical indicators to study their effectiveness in market prediction.
+An experimental project exploring deep learning approaches for stock market prediction. This project implements an LSTM-based architecture with attention mechanism and combines technical indicators to study their effectiveness in market prediction.
 
 ## 🔍 Features
 
-- **Neural Network Models**
-  - LSTM Networks
-  - GRU Networks
-  - Transformer Models
-  - Ensemble Methods
+- **Neural Network Model**
+  - LSTM Network with Attention
+  - Bidirectional layers
+  - Residual connections
 
 - **Technical Indicators**
   - Moving Averages (SMA, EMA)
@@ -23,10 +22,10 @@ An experimental project exploring deep learning approaches for stock market pred
   - Data normalization
 
 - **Model Training**
-  - Cross-validation
-  - Hyperparameter tuning with Optuna
+  - Early stopping
+  - Learning rate reduction
   - Performance metrics tracking
-  - MLflow experiment logging
+  - Model checkpointing
 
 ## 📊 Metrics
 
@@ -43,15 +42,13 @@ An experimental project exploring deep learning approaches for stock market pred
 - Scikit-learn
 - YFinance API
 - Technical Analysis Library (TA-Lib)
-- MLflow
-- Optuna
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stonks.git
-   cd stonks
+   git clone https://github.com/Yashman-Singh/stock-prediction-experiment.git
+   cd stock-prediction-experiment
    ```
 
 2. Install dependencies:
@@ -59,13 +56,7 @@ An experimental project exploring deep learning approaches for stock market pred
    pip install -r requirements.txt
    ```
 
-3. Set up environment variables:
-   ```bash
-   cp .env.example .env
-   # Add your API keys to .env
-   ```
-
-4. Run the experiment:
+3. Run the experiment:
    ```bash
    python src/main.py
    ```
@@ -73,7 +64,7 @@ An experimental project exploring deep learning approaches for stock market pred
 ## 📁 Project Structure
 
 ```
-stonks/
+stock-prediction-experiment/
 ├── src/                  # Source code
 │   ├── data/            # Data collection and preprocessing
 │   ├── models/          # Neural network models
